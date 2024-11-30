@@ -2,8 +2,8 @@ import streamlit as st
 import random
 
 # 초기 데이터 설정
-names = ['김민서', '김예진', '김종진', '문찬우', '서지연', '오승옥', '유준선', '이윤이', '임세은']
-people_num = 9
+names = ['김예진', '김종진', '문찬우', '오승옥', '유준선', '이윤이', '임세은']
+people_num = 7
 liar = 2
 not_liar = people_num - liar
 

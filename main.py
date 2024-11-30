@@ -4,14 +4,14 @@ import random
 # 초기 데이터 설정
 names = ['김예진', '김종진', '문찬우', '오승옥', '유준선', '이윤이', '임세은']
 people_num = 7
-liar = 2
+liar = 1
 not_liar = people_num - liar
 
 # 랜덤으로 선택된 사람 설정
 selected_names = random.sample(names, 2)
 
 # liar와 not_liar 리스트 생성
-items = [selected_names[0]] * not_liar + [selected_names[1]] * liar
+items = [selected_names[0]] * not_liar + [str(selected_names[1])+'(라이어입니다!)'] * liar
 random.shuffle(items)
 
 # 번호와 이름 추가
